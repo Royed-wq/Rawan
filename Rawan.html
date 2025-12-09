@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wow</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body {
+            background-color: #000; /* خلفية سوداء */
+        }
+
+        .glow {
+            font-size: 50px;
+            font-weight: bold;
+            color: #00ff66; /* لون أخضر */
+            text-shadow: 
+                0 0 10px #00ff66,
+                0 0 20px #00ff66,
+                0 0 30px #00ff66,
+                0 0 40px #00ff66,
+                0 0 70px #00ff66;
+            animation: glowPulse 2s infinite alternate;
+        }
+
+        @keyframes glowPulse {
+            0% {
+                text-shadow:
+                    0 0 10px #00ff66,
+                    0 0 20px #00ff66,
+                    0 0 30px #00ff66;
+            }
+            100% {
+                text-shadow:
+                    0 0 20px #00ff66,
+                    0 0 40px #00ff66,
+                    0 0 80px #00ff66;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 class="glow">XSA</h1>
+
+</body>
+</html>
