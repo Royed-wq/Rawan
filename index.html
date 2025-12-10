@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wow</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Text</title>
 
-    <style>
-        body {
-            background-color: #000; /* خلفية سوداء */
-        }
+  <style>
+    body {
+      background-color: #000;
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial, sans-serif;
+    }
 
-        .glow {
-            font-size: 50px;
-            font-weight: bold;
-            color: #00ff66; /* لون أخضر */
-            text-shadow: 
-                0 0 10px #00ff66,
-                0 0 20px #00ff66,
-                0 0 30px #00ff66,
-                0 0 40px #00ff66,
-                0 0 70px #00ff66;
-            animation: glowPulse 2s infinite alternate;
-        }
+    h1 {
+      font-size: 60px;
+      line-height: 1.3;
+    }
 
-        @keyframes glowPulse {
-            0% {
-                text-shadow:
-                    0 0 10px #00ff66,
-                    0 0 20px #00ff66,
-                    0 0 30px #00ff66;
-            }
-            100% {
-                text-shadow:
-                    0 0 20px #00ff66,
-                    0 0 40px #00ff66,
-                    0 0 80px #00ff66;
-            }
-        }
-    </style>
+    /* كلمة KSA */
+    .ksa {
+      color: #00ff66; /* أخضر */
+      text-shadow: 
+        0 0 10px #00ff66,
+        0 0 20px #00ff66,
+        0 0 40px #00ff66,
+        0 0 80px #00ff66;
+    }
 
+    /* كلمة Egypt */
+    .egypt {
+      color: #ff0099; /* وردي */
+      text-shadow: 
+        0 0 10px #ff0099,
+        0 0 20px #ff0099,
+        0 0 40px #ff0099,
+        0 0 80px #ff0099;
+    }
+
+    /* سطر Sh.ail */
+    .sh {
+      color: #00ff66; /* أخضر */
+      text-shadow:
+        0 0 10px #00ff66,
+        0 0 20px #00ff66,
+        0 0 40px #00ff66,
+        0 0 80px #00ff66;
+    }
+
+    .ail {
+      color: #ff0099; /* وردي */
+      text-shadow:
+        0 0 10px #ff0099,
+        0 0 20px #ff0099,
+        0 0 40px #ff0099,
+        0 0 80px #ff0099;
+    }
+
+    /* الصورة */
+    img {
+      margin-top: 40px;
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #0f0;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1 class="glow">XSA</h1>
+  <h1>
+    <span class="ksa">KSA</span><br>
+    <span class="egypt">Egypt</span><br>
+    <span class="sh">Sh.</span><span class="ail">ail</span>
+  </h1>
+
+  <!-- ضع رابط صورتك هنا -->
+  <img src="your-image.png" alt="Image">
 
 </body>
 </html>
